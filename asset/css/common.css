@@ -1,0 +1,19 @@
+/* 자주 사용하는 스타일을 저장 */
+
+/* 폰트 추가 */
+@font-face { 
+  font-family: 'KCCChassam';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+/* 웹 화면의 좌우 길이를 설정. */
+.site-width {
+  margin: 0 auto;
+  width: 1280px;
+}
+/* 메인영역 높이 */
+main {
+  min-height: 100vh;
+  background-color: rgb(214, 230, 245);
+}

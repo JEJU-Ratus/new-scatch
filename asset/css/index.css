@@ -1,14 +1,10 @@
 /* index.css - 메인 페이지의 CSS 스타일을 지정 */
+@import './reset.css';
+@import './common.css';
+@import './layout.css';
+
 *{
   font-family: 'KCCChassam';
-}
-
-img{
-  display: inline-block;
-}
-header{ /* 메인페이지 헤더 투명하게 */
-  background-color: rgba(255, 255, 255, 0);
-
 }
 .wrap_mainSlide{ /* 슬라이드를 넘어서는 길이는 잘라버리기 */
   overflow: hidden;
