@@ -1,0 +1,108 @@
+*{
+  font-family: 'KCCChassam';
+}
+
+.wrap_myPage{ /* 페이지 전체 틀 */
+  margin-top: 53px;
+  padding-top: 10%;
+  padding-bottom: 300px;
+}
+.wrap_profile{/* 프로필 명함 외부 틀 */
+  height: 300px;
+}
+
+.cont_profile{/* 프로필 명함 객체 틀 */
+  margin: 0 auto;
+  width: 40%;
+  position: relative;
+}
+.cont_profile > p{
+  color:rgb(113, 138, 112);
+}
+.idCard{/* 프로필 명함 내부 디자인 */
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+  backface-visibility: hidden;
+  transition: 0.5s;
+}
+h2{
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.cont_profile > ul{
+  position: relative;
+}
+.cont_profile li{
+  display: inline-block;
+}
+.front li:last-child::before{
+  content: '';
+  display: inline-block;
+  background-color: black;
+  width: 1px;
+  height: 220px;
+  position: absolute;
+  top: 18px;
+  left: 209px;
+}
+.cont_myInfo{
+  margin-left: 20px;
+}
+.wrap_profileCircle{
+  text-align: center;
+  margin: 0 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('../images/profileImg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.img_profileLogo{
+  width: 105px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.front{
+  position: absolute;
+}
+.back{
+  width: 447px;
+  height: 255px;
+  position: absolute;
+  transform: rotateY(180deg);
+}
+/* 뒷면 */
+.btn_editSite{
+  display: none;
+  margin-left: 39%;
+  margin-bottom: 300px;
+  border: none;
+  border-radius: 20px;
+  padding: 20px 100px;
+  background-color: #3E8CEC;;
+  color: white;
+}
+.siteSet{
+  position: relative;
+}
+.siteInputBox{
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.siteList li{
+  display: block;
+  margin-bottom: 11px;
+}
+.siteList li:nth-child(2){
+  margin-bottom : 10.5px
+}
+input{
+  margin-bottom: 10px;
+  width: 265px;
+  font-size: 0.8rem;
+}

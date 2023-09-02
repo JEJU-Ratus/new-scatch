@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스캐치 : 내 정보</title>
+  <link rel="stylesheet" href="../style/reset.css">
+  <link rel="stylesheet" href="../style/frame.css">
+  <link rel="stylesheet" href="../style/myPage.css">
+</head>
+
+<body>
+  <header id="header">
+    <!-- 상단 영역. 로고 및 메뉴 -->
+    <div class="cont_frame siteWidth">
+      <h1>
+        <!-- 로고 -->
+        <a href="index-afterLogin.html">
+          <img class="img_logo" src="../images/logo_final.png" alt="스캐치 로고 이미지">
+        </a>
+      </h1>
+      <nav>
+        <!-- 메뉴 -->
+        <ul class="cont_menu">
+          <li><a href="intro-afterLogin.html">사이트 소개</a></li>
+          <li><a href="notice-afterLogin.html">공지사항</a></li>
+          <li class="wrap_menuKategorie"><a href="market-afterLogin.html" class="menuKategorie">판매 캐릭터</a>
+            <ul class="cont_menuKategorie">
+              <li><a href="kategorie1-afterLogin.html">카테고리1</a></li>
+              <li><a href="kategorie2-afterLogin.html">카테고리2</a></li>
+            </ul>
+          </li>
+          <li><a href="../index.html" id="logout">로그아웃</a></li>
+          <li><a href="myPage-afterLogin.html">내 정보</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="wrap_myPage siteWidth">
+      <!-- 메인영역 구조 -->
+      <div class="wrap_profile">
+        <section class="cont_profile">
+          <p>명함을 클릭하면 명함이 뒤집어집니다.</p>
+          <div class="idCard front">
+            <h2>내 정보</h2>
+            <ul>
+              <li>
+                <div class="wrap_profileCircle"></div>
+              </li>
+              <li class="cont_myInfo">
+                <p>이름 : 판디</p>
+                <p>휴대전화 : 01012345678</p>
+                <p>생년월일 : 1997년 10월 01일</p>
+                <p>email : pandi@scatch.com</p>
+              </li>
+            </ul>
+            <img class="img_profileLogo" src="../images/logo_final.png" alt="스캐치 사이트 로고">
+          </div>
+          <div class="idCard back">
+            <h2>내 사이트</h2>
+            <div class="siteSet">
+              <div class="siteList">
+                <ul>
+                  <li>사이트 1 : <span class="site">미등록</span></li>
+                  <li>사이트 2 : <span class="site">미등록</span></li>
+                  <li>사이트 3 : <span class="site">미등록</span></li>
+                </ul>
+              </div>
+              <div class="siteInputBox">
+                <ul>
+                  <li>
+                    <div>
+                      <label for="site1">사이트 1 : </label>
+                      <input type="text" id="site1" class="siteInput" value="미등록" onkeyup="changeSiteLink()">
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <label for="site2">사이트 2 : </label>
+                      <input type="text" id="site2" class="siteInput" value="미등록" onkeyup="changeSiteLink()">
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <label for="site3">사이트 3 : </label>
+                      <input type="text" id="site3" class="siteInput" value="미등록" onkeyup="changeSiteLink()">
+                    </div>
+                  </li>
+                </ul>
+                <p>형식은 http://주소~ 입니다.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <button type="button" id="btn_editSite" class="btn_editSite">수정</button>
+    </div>
+  </main>
+  <footer>
+    <!-- 하단 영역. 기업 정보 및 마스코트 배치 -->
+    <div class="cont_frame">
+      <div class="wrap_info">
+        <p>대표자 : 사두용미｜송민혁,이승현,정루시아｜63145 오라1동 1770 3층,4층 더큰내일 센터</p>
+        <p>광고문의 e-mail@naver.com</p>
+        <p>저희 스캐치는 통신판매 플랫폼 제공자이며, 통신판매의 당사자가 아닙니다. 상품, 상품정보, 거래에 관한 의무와 책임은 판매회원에게 있습니다</p>
+      </div>
+      <img src="../images/mascot_final.png" alt="온몸에 물감을 칠하고 트럭을 몰고와 그림을 팔고있는 팬더 이름은 판디">
+    </div>
+    <p class="copyright">Copyright © 2023.Scatch.All right reserved</p>
+  </footer>
+  <script src="../script/frame.js"></script>
+  <script src="../script/logout.js"></script>
+  <script src="../script/myPage.js"></script>
+</body>
+
+</html>

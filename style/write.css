@@ -1,0 +1,54 @@
+/* 공지사항 작성 페이지의 CSS 스타일 지정 */
+
+.cont_write {
+  margin-bottom: 30px;
+  border-top: 2px solid #000;
+  background-color: white;
+}
+
+.wrap_title {
+  padding: 15px;
+  border-bottom: 1px dashed #ddd;
+}
+.wrap_title label{
+  margin-right: 30px;
+  font-weight: bold;
+}
+.wrap_title input{
+  width: 1182px;
+}
+
+.wrap_writer {
+  padding: 15px;
+  border-bottom: 1px solid #999;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.cont_write dl {
+  display: flex;
+}
+
+.cont_write dt {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.cont_write dd {
+  margin-left: 10px;
+
+}
+
+.cont_write dt::after {
+  content: ":";
+  position: absolute;
+  top: 13px;
+  left: 71px;
+}
+.wrap_editor{
+  width: 1280px;
+  resize: none;
+}
+.btn_submit{
+  display: none;
+}

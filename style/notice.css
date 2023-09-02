@@ -1,0 +1,45 @@
+/* notice.css - 공지사항 페이지의 CSS 스타일 지정 */
+
+.cont_notice_li {
+  text-align: center;
+  border-top: 2px solid #000;
+}
+
+.cont_notice_li>div {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 0;
+}
+
+.cont_notice_li>div.cont_attribute {
+  border-bottom: 1px solid #999;
+  font-weight: bold;
+}
+
+.cont_attribute>.tit_list {
+  text-align: center;
+}
+
+.cont_notice_li>div:last-child {
+  border-bottom: 1px solid #000;
+}
+
+.cont_notice_li>div>div {
+  display: inline-block;
+}
+
+.wrap_num,
+.wrap_writer,
+.wrap_date,
+.wrap_viewCount {
+  width: 10%;
+}
+
+.tit_list {
+  width: 60%;
+  text-align: left;
+}
+.wrap_btnPage {
+  margin-top: 70px;
+  padding-bottom: 30px;
+}

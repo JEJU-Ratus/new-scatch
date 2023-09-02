@@ -1,0 +1,17 @@
+/* boardFrame.css - 공지사항 페이지, 게시물 작성 페이지의 기본 틀  CSS 스타일 지정 */
+
+.cont_notice{
+  margin-top: 53px;
+}
+.tit_notice {
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+
+h2{
+  font-size: 28px;
+  font-family: 'KCCChassam';
+}
+.wrap_button a:nth-child(-n + 2) {
+  margin-left: 0;
+}

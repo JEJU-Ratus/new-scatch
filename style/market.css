@@ -1,0 +1,38 @@
+/* 캐릭터 판메 페이지의 CSS 스타일 지정 */
+
+h2{
+  margin-bottom: 60px;
+  font-family: 'KCCChassam';
+}
+h3{
+  font-family: 'KCCChassam';
+}
+.tit_kategori{
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #000;
+}
+h3{
+  display: inline-block;
+  font-size: 22px;
+}
+.tit_more {
+  float: right;
+  clear: both;
+  margin-right: 12px;
+  position: relative;
+  font-family: 'KCCChassam';
+}
+.tit_more::after {
+  display: inline-block;
+  content: "";
+  background: url(../images/tit_more.png) no-repeat;
+  background-size: 22px;
+  width: 14px;
+  height: 20px;
+  position: absolute;
+  top: -1.5px;
+}
+.cont_kategoriBlock{
+  padding-bottom: 60px;
+}

@@ -1,0 +1,73 @@
+/* join.css - 회원가입 창 CSS 스타일 지정 */
+
+.wrap_join{ /* 회원가입 창 + 둘러싸고 있는 window 창 까지 포지션 */
+  display: flex;
+  justify-content: center;
+  margin-top: 53px;
+}
+.cont_join{ /* 회원가입 창 포지션 */
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis:39%;
+  justify-content: center;
+  margin-top: 15%;
+  margin-bottom: 300px;
+  padding: 33px;
+  border-radius: 30px;
+  border: none;
+  background-color: #3E8CEC;
+  color: white;
+}
+legend{ /* 회원가입 창 제목 */
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0)
+}
+label{
+  font-family: 'KCCChassam';
+}
+input[type=text], input[type=password], input[type=tel], select{
+  margin: 10px 0;
+  padding: 10px;
+  width: 270px;
+  height: 37px;
+  border: 1px solid #3E8CEC;
+  border-radius: 10px;
+  outline: none;
+}
+input[type=text].wrap_birth, select{
+  width: 74px;
+}
+
+select{
+  padding: 0;
+}
+.wrap_regPwd{
+  font-size: 0.8rem;
+}
+.cont_error{ /* 에러메시지 색깔 */
+  color: rgb(200, 50, 50);
+}
+.cont_error span{ /* 에러 메시지 글자 크기 */
+  font-size: 12px;
+}
+.wrap_fold{/* 에러메시지, 성공메시지 접고 펼치기 */
+  display: none;
+}
+.wrap_success{/* 성공 메시지 색깔 */
+  color: rgb(3, 95, 3);
+}
+.wrap_success span{/* 성공 메시지 글자 크기 */
+  font-size:  12px;
+}
+.wrap_signUp{
+  margin-top: 35px;
+  text-align: center;
+}
+.btn_signUp{ /* 회원가입 버튼 */
+  width: 333px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background-color: white;
+  font-family: 'KCCChassam';
+  cursor: pointer;
+}
