@@ -27,5 +27,5 @@
 
 ### 진행 상황
 
-- index.html을 기준으로 header와 footer를 BEM 규칙에 맞게 네이밍하고, id를 부여해 JS코드를 수정하였다.
+- index.html을 BEM 규칙에 맞게 네이밍하고, id를 부여해 JS코드를 수정하였다.
 - 또한 필요없는 코드를 삭제하였다.

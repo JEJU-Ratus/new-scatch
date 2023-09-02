@@ -1,0 +1,100 @@
+/* index.css - 메인 페이지의 CSS 스타일을 지정 */
+@import './reset.css';
+@import './common.css';
+@import './layout.css';
+
+*{
+  font-family: 'KCCChassam';
+}
+/* 슬라이드를 넘어서는 길이는 잘라버리기 */
+.wrapper { 
+  overflow: hidden;
+}
+/* 전체 sliders의 영역 */
+.container { 
+  width: 400vw;
+  font-size: 0;
+  transition: 0.5s;
+}
+/* slider 중 하나를 위한 영역 */
+.sliders { 
+  display: inline-block;
+  width: 100vw;
+  height: 800px;
+  position: relative;
+}
+/* slider 하나의 전체 content 레이아웃 */
+.slider { 
+  display: flex;
+  justify-content: center;
+}
+/* 메인 글귀 및, 좌측 버튼 영역 */
+.slider__content { 
+  margin: auto 193px auto 0;;
+  flex-basis: 450px;
+  position: relative;
+}
+/* 메인 글귀 */
+.slider__content-intro { 
+  font-size: 4rem;
+}
+/* 서브 글귀 */
+.slider__content-subintro {
+  margin-top: 15px;
+  font-weight: bold;
+}
+/* 슬라이드 내부 링크버튼(캐릭터 보러가기, 다른 캐릭터 보러가기) */
+.slider__content-btn {
+  margin-top: 100px;
+}
+/* 내부 버튼 a 태그 */
+.slider__content-link {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: black;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* a태그 첫번째 */
+.slider__content-link:first-child {
+  padding: 20px 42.5px;
+}
+/* 슬라이더 좌 우 이동 버튼 */
+.slider__leftbtn, .slider__rightbtn { 
+  cursor: pointer;
+  position: absolute;
+  width: 60px;
+  height: 100px;
+  top: 50%;
+}
+ /* 슬라이더 좌측 이동 버튼 */
+.slider__leftbtn {
+  left: -130px;
+}
+.slider__item{
+  position: relative;
+}
+.slider__item-character{ /* 광고 캐릭터 */
+  width: 400px;
+  height: 800px;
+  object-fit: contain;
+}
+.slider__rightbtn{/* 슬라이더 우측 이동 버튼 */
+  right: -130px;
+}
+.slider__pause{ /* 슬라이더 정지버튼 */
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 62px;
+  left: 5px;
+  cursor: pointer;
+}
+
+
+
+
+
+
