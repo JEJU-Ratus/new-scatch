@@ -29,6 +29,7 @@
 }
 /* 메인영역 높이 */
 .main {
+  margin-top: 54px;
   min-height: 100vh;
   background-color: rgb(214, 230, 245);
 }

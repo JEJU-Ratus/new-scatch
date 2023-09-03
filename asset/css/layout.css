@@ -21,7 +21,7 @@ header {
   transition: 0.5s;
 }
 /* header logo */
-.logo {
+.header__logo {
   width: 100px;
 }
 /* header menu 내부 레이아웃 */
@@ -85,7 +85,7 @@ header {
   font-family: 'KCCChassam';
 }
 /* 하단영역 마스코트 위치설정 */
-.mascot {
+.footer__mascot {
   margin-left: auto;
   width: 250px;
 }

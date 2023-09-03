@@ -2,43 +2,40 @@
 @import './reset.css';
 @import './common.css';
 @import './layout.css';
-
-
-.wrap-intro {
-  margin-top: 53px;
-  /* 메인영역이 상단 메뉴바에 안가려지게  + 메인 영역 포지션 잡기*/
-}
-
+/* intro page의 콘텐츠들을 가운데 정렬하고, 글자를 굵게 만들기 */
 .cont-intro {
   text-align: center;
   font-weight: bold;
 }
-.cont_intro>h2{
+/* logo section의 상단여백 */
+.cont-intro__logo {
   padding-top: 60px;
+}
+/* color, mascot section의 상단 여백 */
+.cont-intro__color,
+.cont-intro__mascot {
+  margin-top: 110px;
+}
+/* intro page의 각 section 제목 */
+.cont-intro__logo-tit,
+.cont-intro__color-tit,
+.cont-intro__mascot-tit {
   margin-bottom: 45px;
   margin-left: 13%;
   text-align: left;
   font-size: 36px;
 }
-.tit_logo{
-  padding-top: 30px;
+/* logo section의 logo img */
+.cont-intro__logo-img {
+  margin: 0 auto 63px auto;
+  width: 191px;
 }
-.tit_distance{
-  margin-top: 50px;
-}
-.img_introLogo {
-  display: inline-block;
-  margin-bottom: 63px;
-  width: 191.76px;
-  height: 82.04px;
-
-}
-
-.cont_siteColor {
+/* color section의 색 3가지를 가지고있는 div */
+.cont-intro__color-palette {
   margin-bottom: 41px;
 }
-
-.wrap_circle {
+/* 3가지 색상의 원 */
+.color-palette-item {
   display: inline-block;
   width: 95.54px;
   height: 95.54px;
@@ -46,52 +43,57 @@
   position: relative;
   z-index: 1;
 }
-
-.wrap_circle span {
+/* 파란색 원 */
+.color-palette-item--blue {
+  background-color: #3E8CEC;
+}
+/* 보라색 원 */
+.color-palette-item--purple {
+  background-color: #C95BEC;
+}
+/* 녹색 원 */
+.color-palette-item--green {
+  background-color: rgb(113, 138, 112);
+}
+/* 원 안의 텍스트의 위치 */
+.color-palette-item--text1,
+.color-palette-item--text2 {
   position: absolute;
   left: 11.645px;
   font-size: 20px;
 }
-.circle{
+/* 원 안의 텍스트의 위치 1번 (파란색, 보라색 원)*/
+.color-palette-item--text1 {
   top: 32.77px;
 }
-.scatch_green{
+/* 원 안의 텍스트의 위치 2번 (녹색 원) */
+.color-palette-item--text2 {
   top: 23px;
 }
-.blue {
-  background-color: #3E8CEC;
-}
-
-.purple {
-  background-color: #C95BEC;
-}
-.green {
-  background-color: rgb(113, 138, 112);
-}
-
-.cont_introMastcot {
+/* mascot의 정보 및 이미지가 들어있는 block */
+.cont-intro__mascot-info {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding-bottom:100px;
 }
-
-.cont_introMastcot>img {
+/* mascot section의 img */
+.mascot-info__img {
   width: 350px;
 }
-
-.cont_mascotText {
+/* mascot section의 text설명 */
+.mascot-info__text {
   flex-basis: 350px;
   margin-left: 20px;
   text-align: left;
 }
-
-.cont_mascotText>h3 {
+/* mascot 설명 안의 "판디" */
+.mascot-info__name {
   margin-bottom: 30px;
   font-size: 28px;
 }
-
-.cont_mascotText>p {
+/* mascot 설명(p tag) */
+.mascot-info__description {
   margin-bottom: 15px;
   color: gray;
   font-size: 13px;

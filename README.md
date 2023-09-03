@@ -27,5 +27,7 @@
 
 ### 진행 상황
 
-- index.html을 BEM 규칙에 맞게 네이밍하고, id를 부여해 JS코드를 수정하였다.
+- index.html(메인페이지)을 BEM 규칙에 맞게 네이밍하고, id를 부여해 JS코드를 수정하였다.
+- 기존의 index.css, index.js, frame.css,frame.js 등의 코드들을 좀 더 규칙성 파일을 생성하여 나누어 정리하였다.
 - 또한 필요없는 코드를 삭제하였다.
+- intro.html(사이트소개)를 BEM 규칙에 맞게 네이밍 하고, 리팩토링 하였다.
