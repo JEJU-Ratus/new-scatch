@@ -8,11 +8,8 @@
   display: flex;
   justify-content: center;
 }
-.cont_join{ /* 회원가입 창 포지션 */
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis:39%;
-  justify-content: center;
+ /* 회원가입 창 포지션 */
+.cont-join{
   margin-top: 15%;
   margin-bottom: 300px;
   padding: 33px;
