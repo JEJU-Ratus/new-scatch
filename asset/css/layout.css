@@ -44,6 +44,7 @@ header {
   font-size: 1.2rem;
   font-weight: bold;
   color: rgb(113, 138, 112);
+  font-family: 'KCCChassam';
 }
 /* menu-link에 마우스를 올렸을 때 */
 .header__menu-link:hover {

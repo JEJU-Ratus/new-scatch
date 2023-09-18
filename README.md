@@ -44,3 +44,4 @@
 - 기존의 index.css, index.js, frame.css,frame.js 등의 코드들을 좀 더 규칙성 파일을 생성하여 나누어 정리하였다.
 - 또한 필요없는 코드를 삭제하였다.
 - intro.html(사이트소개)를 BEM 규칙에 맞게 네이밍 하고, 리팩토링 하였다.
+- join.html을 30%정도(회원가입 창 구조 및 css 일부 리팩토링) BEM 규칙에 맞게 리네임 하였다. css를 

@@ -42,14 +42,14 @@
     <div class="wrap-join site-width">
       <form action="join-finish.html" method="post" onsubmit="return joinForm_check()">
         <!-- 회원 가입 폼 -->
-        <fieldset class="cont-join">
-          <legend>회원가입</legend>
+        <fieldset class="join">
+          <legend class="blind">회원가입</legend>
           <div>
             <!-- 이름 입력 폼 -->
             <h3>
-              <label for="name">이름</label>
+              <label class="join__label" for="name">이름</label>
             </h3>
-            <input type="text" id="name" name="name" maxlength="30" class="focus">
+            <input class="join__value-space focus" type="text" id="name" name="name" maxlength="30">
           </div>
           <div class="cont_error">
             <!-- 에러 메시지 -->
@@ -68,12 +68,11 @@
           </div>
           <div id="birth">
             <!-- 생년월일 입력 폼 -->
-            <h3>
-              <label for="yy">생년월일</label>
-            </h3>
-            <input type="text" name="yy" id="yy" placeholder="년(4자)" maxlength="4" class="focus wrap_birth">
-            <select name="mm" id="mm" class="focus wrap_birth">
-              <option value="">월</option>
+            <h3 class="join__label">생년월일</h3>
+            <label class="blind" for="yy">연도&#40;4자&#41;</label>
+            <input class="join__value-space join__value-space--birth focus" type="text" name="yy" id="yy" placeholder="년(4자)" maxlength="4">
+            <select class="join__value-space join__value-space--month focus" name="mm" id="mm">
+              <option selected value="">월</option>
               <option value="01">1</option>
               <option value="02">2</option>
               <option value="03">3</option>
@@ -87,8 +86,8 @@
               <option value="11">11</option>
               <option value="12">12</option>
             </select>
-            <label for="dd"></label>
-            <input type="text" name="dd" id="dd" placeholder="일" maxlength="2" class="focus wrap_birth">
+            <label class="blind" for="dd">일</label>
+            <input class="join__value-space join__value-space--birth focus" type="text" name="dd" id="dd" placeholder="일" maxlength="2">
           </div>
           <div class="cont_error">
             <!-- 에러메시지 -->
@@ -117,9 +116,9 @@
           <div>
             <!-- 아이디 입력 폼 -->
             <h3>
-              <label for="uid">아이디</label>
+              <label class="join__label" for="uid">아이디</label>
             </h3>
-            <input type="text" id="uid" name="uid" class="focus">
+            <input class="join__value-space focus" type="text" id="uid" name="uid">
           </div>
           <div class="cont_error">
             <!-- 에러메시지 -->
@@ -139,9 +138,9 @@
           <div>
             <!-- 비밀번호 입력 폼 -->
             <h3>
-              <label for="pwd">비밀번호</label>
+              <label class="join__label" for="pwd">비밀번호</label>
             </h3>
-            <input id="pwd" type="password" name="pwd" class="focus">
+            <input class="join__value-space focus" id="pwd" type="password" name="pwd">
             <p class="wrap_regPwd">*영문 소문자, 숫자, 특수문자(!,@,#)를 꼭 포함하여 9~20자</p>
           </div>
           <div class="cont_error">
@@ -161,9 +160,9 @@
           <div>
             <!-- 비밀번호 확인 폼 -->
             <h3>
-              <label for="pwdCheck">비밀번호 확인</label>
+              <label class="join__label" for="pwdCheck">비밀번호 확인</label>
             </h3>
-            <input id="pwdCheck" type="password" name="pwd" class="focus">
+            <input class="join__value-space focus" id="pwdCheck" type="password" name="pwd">
             <input type="checkbox" id="pwdOpen" onclick="pwd_open()">
             <label for="pwdOpen">비밀번호 표시</label>
           </div>
@@ -184,9 +183,9 @@
           <div>
             <!-- 전화번호 입력 폼 -->
             <h3>
-              <label for="tel">휴대전화</label>
+              <label class="join__label" for="tel">휴대전화</label>
             </h3>
-            <input type="tel" id="tel" name="tel" placeholder="전화번호입력" maxlength="16" class="focus">
+            <input class="join__value-space focus" type="tel" id="tel" name="tel" placeholder="전화번호입력" maxlength="16">
             <span>ex&#41;01012345678</span>
           </div>
           <div class="cont_error">
@@ -206,9 +205,9 @@
           <div>
             <!-- 이메일 입력 폼 -->
             <h3>
-              <label for="email">이메일</label>
+              <label class="join__label" for="email">이메일</label>
             </h3>
-            <input type="text" id="email" name="email" placeholder="이메일입력" class="focus">
+            <input class="join__value-space focus" type="text" id="email" name="email" placeholder="이메일입력">
             <span>ex&#41;pandi@scatch.com</span>
           </div>
           <div class="cont_error">

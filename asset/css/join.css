@@ -9,7 +9,7 @@
   justify-content: center;
 }
  /* 회원가입 창 포지션 */
-.cont-join{
+.join{
   margin-top: 15%;
   margin-bottom: 300px;
   padding: 33px;
@@ -18,13 +18,12 @@
   background-color: #3E8CEC;
   color: white;
 }
-legend{ /* 회원가입 창 제목 */
-  clip-path: polygon(0 0, 0 0, 0 0, 0 0)
-}
-label{
+/* 각 입력값의 소제목 폰트 변경 */
+.join__label{
   font-family: 'KCCChassam';
 }
-input[type=text], input[type=password], input[type=tel], select{
+/* input값이 들어갈 수 있는 공간 */
+.join__value-space{
   margin: 10px 0;
   padding: 10px;
   width: 270px;
@@ -33,11 +32,13 @@ input[type=text], input[type=password], input[type=tel], select{
   border-radius: 10px;
   outline: none;
 }
-input[type=text].wrap_birth, select{
+/* 생년월일 input공간의 길이 */
+.join__value-space--birth{
   width: 74px;
 }
-
-select{
+/* 생년월일 중 '월'에 해당하는 공간 */
+.join__value-space--month{
+  width: 74px;
   padding: 0;
 }
 .wrap_regPwd{
