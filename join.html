@@ -52,15 +52,7 @@
             <input class="join__value-space focus" type="text" id="name" name="name" maxlength="30">
           </div>
           <p class="error-message"></p> <!-- errorMessage[0] -->
-          <div class="cont_error error-message">
-            <!-- 에러 메시지 -->
-            <div id="nameBlank" class="wrap_fold">
-              <span><strong>이름</strong>를 입력하세요.</span>
-            </div>
-            <div id="nameReg" class="wrap_fold">
-              <span><strong>이름</strong>은 한글 2~30자 이내로 작성해주세요.</span>
-            </div>
-          </div>
+          <p class="success-message"></p> <!-- successMessage[0] -->
           <div class="wrap_success">
             <!-- 성공 메시지 -->
             <div id="nameSuccess" class="wrap_fold">
@@ -90,7 +82,9 @@
             <label class="blind" for="dd">일</label>
             <input class="join__value-space join__value-space--birth focus" type="text" name="dd" id="dd" placeholder="일" maxlength="2">
           </div>
-          <div class="cont_error error-message">
+          <p class="error-message"></p> <!-- errorMessage[1] -->
+          <p class="success-message"></p> <!-- successMessage[1] -->
+          <div class="cont_error">
             <!-- 에러메시지 -->
             <div id="yearBlank" class="wrap_fold">
               <span>태어난 년도 4자리를 입력하세요.</span>
@@ -121,7 +115,9 @@
             </h3>
             <input class="join__value-space focus" type="text" id="uid" name="uid">
           </div>
-          <div class="cont_error error-message">
+          <p class="error-message"></p> <!-- errorMessage[2] -->
+          <p class="success-message"></p> <!-- successMessage[2] -->
+          <div class="cont_error">
             <!-- 에러메시지 -->
             <div id="uidBlank" class="wrap_fold">
               <span><strong>아이디</strong>를 입력하세요.</span>
@@ -144,7 +140,9 @@
             <input class="join__value-space focus" id="pwd" type="password" name="pwd">
             <p class="wrap_regPwd">*영문 소문자, 숫자, 특수문자(!,@,#)를 꼭 포함하여 9~20자</p>
           </div>
-          <div class="cont_error error-message">
+          <p class="error-message"></p> <!-- errorMessage[3] -->
+          <p class="success-message"></p> <!-- successMessage[3] -->
+          <div class="cont_error">
             <!-- 에러메시지 -->
             <div id="pwdBlank" class="wrap_fold">
               <span><strong>비밀번호</strong>를 입력하세요.</span>
@@ -167,7 +165,9 @@
             <input type="checkbox" id="pwdOpen" onclick="pwd_open()">
             <label for="pwdOpen">비밀번호 표시</label>
           </div>
-          <div class="cont_error error-message">
+          <p class="error-message"></p> <!-- errorMessage[4] -->
+          <p class="success-message"></p> <!-- successMessage[4] -->
+          <div class="cont_error">
             <!-- 에러메시지 -->
             <div id="pwdCheckBlank" class="wrap_fold">
               <span><strong>비밀번호 확인란</strong>을 입력하세요.</span>
@@ -189,7 +189,9 @@
             <input class="join__value-space focus" type="tel" id="tel" name="tel" placeholder="전화번호입력" maxlength="16">
             <span>ex&#41;01012345678</span>
           </div>
-          <div class="cont_error error-message">
+          <p class="error-message"></p> <!-- errorMessage[5] -->
+          <p class="success-message"></p> <!-- successMessage[5] -->
+          <div class="cont_error">
             <!-- 에러메시지 -->
             <div id="telBlank" class="wrap_fold">
               <span><strong>전화번호</strong>를 입력하세요.</span>
@@ -211,7 +213,9 @@
             <input class="join__value-space focus" type="text" id="email" name="email" placeholder="이메일입력">
             <span>ex&#41;pandi@scatch.com</span>
           </div>
-          <div class="cont_error error-message">
+          <p class="error-message"></p> <!-- errorMessage[6] -->
+          <p class="success-message"></p> <!-- successMessage[6] -->
+          <div class="cont_error">
             <!-- 에러메시지 -->
             <div id="emailBlank" class="wrap_fold">
               <span><strong>이메일</strong>을 입력하세요.</span>
@@ -245,7 +249,7 @@
     <p class="footer__copyright">Copyright © 2023.Scatch.All right reserved</p>
   </footer>
   <script src="asset/js/header.js"></script>
-  <script src="script/join.js"></script>
+  <script src="asset/js/join.js"></script>
 </body>
 
 </html>

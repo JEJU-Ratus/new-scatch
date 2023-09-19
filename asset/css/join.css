@@ -41,11 +41,15 @@
   width: 74px;
   padding: 0;
 }
-/* erroMessage의 margin 및 글자 스타일*/
+/* erroMessage의 글자 스타일*/
 .error-message{
-  margin-bottom: 10px;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: rgb(200, 50, 50);
+}
+/* successMessage의 margin 및 글자 스타일*/
+.success-message{
+  font-size: 0.75rem;
+  color: rgb(3, 95, 3);
 }
 .wrap_regPwd{
   font-size: 0.8rem;

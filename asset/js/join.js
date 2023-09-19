@@ -46,6 +46,7 @@ const pwdSuccess = document.getElementById('pwdSuccess');
 const pwdCheckSuccess = document.getElementById('pwdCheckSuccess');
 const telSuccess = document.getElementById('telSuccess');
 const emailSuccess = document.getElementById('emailSuccess');
+const successMessage = document.querySelectorAll('.success-message');
 
 let checkAll = []; // 유효성 결과 체크
 let finalCheck = true; // 최종 결과
@@ -105,20 +106,21 @@ function input_name() {
     const nameError = document.createElement("strong");
     nameError.textContent = "이름";
     if (!uname.value) {
+      successMessage[0].textContent = "";
       errorMessage[0].textContent = "";
       errorMessage[0].append(nameError,"을 입력하세요");
       checkAll[0] = false;
     }
     else {
+      successMessage[0].textContent = "";
       errorMessage[0].textContent = "";
       errorMessage[0].append(nameError,"은 한글 2~30자 이내로 작성해주세요.");
       checkAll[0] = false;
     }
   }
   else {
-    nameBlank.classList.add('wrap_fold');
-    nameReg.classList.add('wrap_fold');
-    nameSuccess.classList.remove('wrap_fold');
+    errorMessage[0].textContent = "";
+    successMessage[0].textContent = "좋아요!";
     checkAll[0] = true;
   }
 }
