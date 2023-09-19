@@ -41,14 +41,14 @@
   width: 74px;
   padding: 0;
 }
-.wrap_regPwd{
-  font-size: 0.8rem;
-}
-.cont_error{ /* 에러메시지 색깔 */
+/* erroMessage의 margin 및 글자 스타일*/
+.error-message{
+  margin-bottom: 10px;
+  font-size: 12px;
   color: rgb(200, 50, 50);
 }
-.cont_error span{ /* 에러 메시지 글자 크기 */
-  font-size: 12px;
+.wrap_regPwd{
+  font-size: 0.8rem;
 }
 .wrap_fold{/* 에러메시지, 성공메시지 접고 펼치기 */
   display: none;

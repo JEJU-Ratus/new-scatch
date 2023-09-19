@@ -1,12 +1,12 @@
-const uname = document.getElementById('name'); //이름 파라미터의 연동
-const year = document.getElementById('yy'); // 생년월일의 연도 파라미터 연동
-const month = document.getElementById('mm')
-const day = document.getElementById('dd'); // 생년월일의 일자 파라미터 연동
-const uid = document.getElementById('uid'); // 사용자 아이디 파라미터 연동
-const pwd = document.getElementById('pwd'); // 비밀번호 파라미터 연동
-const pwdCheck = document.getElementById('pwdCheck'); // 비밀번호확인 파라미터 연동
-const tel = document.getElementById('tel'); // 전화번호 파라미터 연동
-const email = document.getElementById('email'); //email 파라미터 연동
+const uname = document.getElementById('name'), //이름 파라미터의 연동
+year = document.getElementById('yy'), // 생년월일의 연도 파라미터 연동
+month = document.getElementById('mm'),  // 생년월일의 월 파라미터 연동
+day = document.getElementById('dd'), // 생년월일의 일자 파라미터 연동
+uid = document.getElementById('uid'), // 사용자 아이디 파라미터 연동
+pwd = document.getElementById('pwd'), // 비밀번호 파라미터 연동
+pwdCheck = document.getElementById('pwdCheck'),// 비밀번호확인 파라미터 연동
+tel = document.getElementById('tel'), // 전화번호 파라미터 연동
+email = document.getElementById('email'); //email 파라미터 연동
 
 //유효성 검증
 const REG_NAME = /^[가-힣]{2,30}$/; // 이름 규칙
@@ -37,7 +37,7 @@ const telBlank = document.getElementById('telBlank');
 const telReg = document.getElementById('telReg');
 const emailBlank = document.getElementById('emailBlank');
 const emailReg = document.getElementById('emailReg');
-
+const errorMessage = document.querySelectorAll('.error-message');
 // 성공 메시지 연동
 const nameSuccess = document.getElementById('nameSuccess');
 const birthSuccess = document.getElementById('birthSuccess');
@@ -102,17 +102,16 @@ function input_name() {
   // 이름 유효성 테스트 및 결과 메시지 출력
 
   if (!REG_NAME.test(uname.value)) { // 이름 규칙 확인
+    const nameError = document.createElement("strong");
+    nameError.textContent = "이름";
     if (!uname.value) {
-      nameBlank.classList.remove('wrap_fold'); // 이름을 입력하세요 - 펼치기
-      nameReg.classList.add('wrap_fold'); // 이름은 한글 2~30자 이내로 작성해주세요. - 가리기
-      nameSuccess.classList.add('wrap_fold');
+      errorMessage[0].textContent = "";
+      errorMessage[0].append(nameError,"을 입력하세요");
       checkAll[0] = false;
     }
     else {
-      nameBlank.classList.add('wrap_fold');// 이름은 한글 2~30자 이내로 작성해주세요. - 펼치기
-      nameReg.classList.remove('wrap_fold'); //이름을 입력하세요 - 가리기
-      nameSuccess.classList.add('wrap_fold');// 이름으로 돌아가기
-
+      errorMessage[0].textContent = "";
+      errorMessage[0].append(nameError,"은 한글 2~30자 이내로 작성해주세요.");
       checkAll[0] = false;
     }
   }
