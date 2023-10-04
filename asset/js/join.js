@@ -128,23 +128,13 @@ function input_year() {
   // 생년월일 유효성 테스트 및 결과 메시지 출력
   if (!REG_YEAR.test(year.value)) {
     if (!year.value) {
-      yearBlank.classList.remove('wrap_fold');
-      yearReg.classList.add('wrap_fold');
-      monthBlank.classList.add('wrap_fold');
-      dayBlank.classList.add('wrap_fold');
-      dayReg.classList.add('wrap_fold');
-      birthSuccess.classList.add('wrap_fold');
-
+      successMessage[1].textContent = "";
+      errorMessage[1].textContent = "태어난 년도 4자리를 입력하세요.";
       checkAll[1] = false;
     }
     else {
-      yearBlank.classList.add('wrap_fold');
-      yearReg.classList.remove('wrap_fold');
-      monthBlank.classList.add('wrap_fold');
-      dayBlank.classList.add('wrap_fold');
-      dayReg.classList.add('wrap_fold');
-      birthSuccess.classList.add('wrap_fold');
-
+      successMessage[1].textContent = "";
+      errorMessage[1].textContent = "연도를 정확하게 입력해주세요. 예)1999, 2023, ...";
       checkAll[1] = false;
     }
   }
@@ -154,13 +144,8 @@ function input_year() {
 }
 function input_month() {
   if (!month.value) {
-    yearBlank.classList.add('wrap_fold');
-    yearReg.classList.add('wrap_fold');
-    monthBlank.classList.remove('wrap_fold');
-    dayBlank.classList.add('wrap_fold');
-    dayReg.classList.add('wrap_fold');
-    birthSuccess.classList.add('wrap_fold');
-
+    successMessage[1].textContent = "";
+    errorMessage[1].textContent = "태어난 월을 선택하세요.";
     checkAll[1] = false;
   }
     else {
@@ -170,34 +155,20 @@ function input_month() {
 function input_day() {
   if (!REG_DAY.test(dd.value)) {
     if (!day.value) {
-      yearBlank.classList.add('wrap_fold');
-      yearReg.classList.add('wrap_fold');
-      monthBlank.classList.add('wrap_fold');
-      dayBlank.classList.remove('wrap_fold');
-      dayReg.classList.add('wrap_fold');
-      birthSuccess.classList.add('wrap_fold');
-
+      successMessage[1].textContent = "";
+      errorMessage[1].textContent = "태어난 일자를 입력하세요.";
       checkAll[1] = false;
     }
     else {
-      yearBlank.classList.add('wrap_fold');
-      yearReg.classList.add('wrap_fold');
-      monthBlank.classList.add('wrap_fold');
-      dayBlank.classList.add('wrap_fold');
-      dayReg.classList.remove('wrap_fold');
-      birthSuccess.classList.add('wrap_fold');
-
+      successMessage[1].textContent = "";
+      errorMessage[1].textContent = "일자를 정확하게 입력해주세요. 예)1~31 ...";
       checkAll[1] = false;
     }
   }
   else {
-    yearBlank.classList.add('wrap_fold');
-    yearReg.classList.add('wrap_fold');
-    monthBlank.classList.add('wrap_fold');
-    dayBlank.classList.add('wrap_fold');
-    dayReg.classList.add('wrap_fold');
-    birthSuccess.classList.remove('wrap_fold');
-    checkAll[1] = true;
+    errorMessage[0].textContent = "";
+    successMessage[0].textContent = "좋아요!";
+    checkAll[0] = true;
   }
 }
 function input_uid() {
